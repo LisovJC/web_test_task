@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>test_form</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <h3>Вы регистрируетесь как</h3>
+
+<label>Покупатель
+  <input type="radio" name="fruit" checked/>
+  <span></span>
+</label>
+
+<label>Поставщик
+  <input type="radio" name="fruit" />
+  <span></span>
+</label>
+
+    <div class="container">
+      <form>
+        <label>Эл. Почта </label>
+        <input class="text_fields" type="text" placeholder="Эл. Почта"/>
+      </form>
+    </div>
+
+    <h3>Наименование организации</h3>
+
+    <div class="container">
+      <form>
+        <label>ИП или Юр. лицо </label>
+        <input class="text_fields" type="text" placeholder="ИП или Юр. лицо"/>
+      </form>
+    </div>
+
+    <div class="container">
+      <form>
+        <label>ИНН </label>
+        <input class="text_fields" type="text" placeholder="ИНН"/>
+      </form>
+    </div>
+
+    <h3>Фактический адрес</h3>
+
+    <div class="container">
+      <form>
+        <label>Ваш город </label>
+        <input class="text_fields" type="text" placeholder="Ваш город"/>
+
+        <label>Улица </label>
+        <input class="text_fields" type="text" placeholder="Улица"/>
+
+        <label>Дом/стр. </label>
+        <input class="text_fields" type="text" placeholder="Дом/Стр."/>
+
+        <label>Офис </label>
+        <input class="text_fields" type="text" placeholder="Офис"/>
+
+        <label>Телефон (+7)</label>
+        <input class="text_fields" type="text" placeholder="+7"/>
+
+        <label>Сайт вашей компании </label>
+        <input class="text_fields" type="text" placeholder="Сайт вашей компании"/>
+      </form>
+    </div>
+
+    <h3>Виды деятельности</h3>
+
+    <div class="container">
+      <input type="checkbox" class="custom-checkbox" id="m1" name="m1" value="yes">
+      <label for="m1">Магазин</label>
+    </div>
+
+    <div class="container">
+      <input type="checkbox" class="custom-checkbox" id="m2" name="m2" value="yes">
+      <label for="m2">Региональная сеть магазинов</label>
+    </div>
+
+    <div class="container">
+      <input type="checkbox" class="custom-checkbox" id="m3" name="m3" value="yes">
+      <label for="m3">Федеральная сеть магазинов</label>
+    </div>
+
+    <div class="container">
+      <input type="checkbox" class="custom-checkbox" id="m4" name="m4" value="yes">
+      <label for="m4">Интернет-магазин</label>
+    </div>
+
+    <div class="container">
+      <input type="checkbox" class="custom-checkbox" id="m2" name="m2" value="yes">
+      <label for="m2">Автосервис</label>
+    </div>
+
+    <div class="container">
+      <form>
+        <label>Прочее </label>
+        <input class="text_fields" type="text" placeholder="Прочее"/>
+      </form>
+    </div>
+
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Уведомление</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <p>Вы успешно заполнили форму!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#openModal">Отправить</a>
+</body>
+</html>
